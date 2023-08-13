@@ -1,0 +1,230 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f3f3ef;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+nav .nav-first-list{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+nav .nav-second-list{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding-right: 40px;
+    text-align: center;
+}
+.nav-second-list .label-text{
+    margin-top: 5px;
+}
+
+nav .input-search{
+    height: 46px;
+    width: 155%;
+    border: 0;
+    padding-right: 2px;
+    padding-left: 30px;
+    background-color: #eef3f9;
+}
+
+.main-section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin: 20px auto;
+}
+
+.main-section .left-content{
+    width: 35%;
+}
+.left-content .box-1{
+    width: 100%;
+    background-color: white;
+    height: 255px;
+    border-radius: 15px;  
+}
+.left-content .box-1 .background{
+    background-color: rgb(227, 221, 221);
+    width: 100%;
+    height: 50px;
+}
+.left-content .box-1 .fa-regular{
+    font-size: 30px;
+    position: absolute;
+    margin: -15px 74px;
+    color: #ce95ff;
+}
+.left-content .box-1 .heading{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.left-content .box-1 .sub-heading{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5px;
+}
+
+.left-content .box-1 .para-column{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.left-content .box-1 .para-column .one{
+    color: gray;
+    font-size: 12px;
+    margin-left: 10px;
+}
+ .box-1 .para-column .two{
+    color: #0d67c2;
+    font-size: 12px;
+    margin-right: 5px;
+} 
+
+.left-content .box-2{
+    width: 100%;
+    background-color: white;
+    min-height: 200px;
+    margin-top: 20px;
+}
+.left-content .box-2 .heading{
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.left-content .box-2 .list{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+.left-content .box-2 .list .list-1{
+    display: inline-block;
+    
+}
+.left-content .box-2 .list .list-2{
+    display: inline-block;
+    margin-left: 5px;
+}
+.main-section .middle-content{
+    width: 100%;
+}
+.middle-content .box-1{
+    width: 100%;
+    background-color: white;
+    min-height: 100px;
+}
+
+.middle-content .box-1 .search{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.middle-content .box-1 .search .input{
+    width: 350px;
+    margin-top: 25px;
+    height: 45px;
+    border-radius: 22px;
+    border: 1px solid grey;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.middle-content .box-1 .search .fa-regular{
+    font-size: 55px;
+    margin-top: 20px;
+    color: #ce95ff;
+}
+.middle-content .box-1 .list{
+ display: flex;
+ justify-content: space-between;
+ gap: 25px;
+ list-style-type: none;
+ padding: 20px;
+
+}
+.middle-content .box-1 .list .sub-title{
+    margin-left: 10px;
+}
+
+
+.middle-content .box-2{
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.middle-content .box-2{
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    margin-top: 20px;
+    
+}
+
+.main-section .right-content{
+    width: 50%;
+    background-color: white;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iocns */
+.fa-linkedin-in{
+    font-size: 25px;
+    color: #0d67c2;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    margin: 15px 5px;
+}
+
+.fa-photo-film{
+    color:rgb(112, 181, 249);
+}
+
+.fa-video{
+    color:rgb(127, 193, 94);
+}
+.fa-calendar-week{
+    color:rgb(231, 163, 62);
+}
+
+.fa-newspaper{
+    color:rgb(252, 146, 149);
+}
+
+li{
+    cursor: pointer;
+}
