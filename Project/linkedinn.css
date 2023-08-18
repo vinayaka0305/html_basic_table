@@ -3,6 +3,7 @@ body{
     margin: 0;
     background-color: #f3f3ef;
     box-sizing: border-box;
+    font-family: Helvetica;
 }
 nav{
     display: flex;
@@ -21,6 +22,7 @@ nav .nav-second-list{
     padding-right: 40px;
     text-align: center;
 }
+
 .nav-second-list .label-text{
     margin-top: 5px;
 }
@@ -60,7 +62,7 @@ nav .input-search{
     font-size: 30px;
     position: absolute;
     margin: -15px 74px;
-    color: #ce95ff;
+    color: #0d67c2;
 }
 .left-content .box-1 .heading{
     text-align: center;
@@ -98,6 +100,7 @@ nav .input-search{
     background-color: white;
     min-height: 200px;
     margin-top: 20px;
+    border-radius: 15px;
 }
 .left-content .box-2 .heading{
     font-weight: 400;
@@ -106,7 +109,7 @@ nav .input-search{
 }
 
 .left-content .box-2 .list{
-    width: 60%;
+    width: 65%;
     margin: auto;
     padding: 10px;
 }
@@ -125,6 +128,7 @@ nav .input-search{
     width: 100%;
     background-color: white;
     min-height: 100px;
+    border-radius: 15px;
 }
 
 .middle-content .box-1 .search{
@@ -145,7 +149,7 @@ nav .input-search{
 .middle-content .box-1 .search .fa-regular{
     font-size: 55px;
     margin-top: 20px;
-    color: #ce95ff;
+    color: #0d67c2;
 }
 .middle-content .box-1 .list{
  display: flex;
@@ -159,29 +163,136 @@ nav .input-search{
     margin-left: 10px;
 }
 
-
 .middle-content .box-2{
     width: 100%;
     background-color: white;
-    height: 200px;
+    height: 300px;
     margin-top: 20px;
+    font-size: 13px;
+    border-radius: 15px;
+}
+.middle-content .box-2 .profile{
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
 }
 
-.middle-content .box-2{
-    width: 100%;
-    background-color: white;
-    height: 200px;
+.middle-content .box-2 .profile .circle{
+    width: 40px;
+    height: 30px;
     margin-top: 20px;
-    
+    background-color: #0d67c2;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 20px;
 }
+.middle-content .box-2 .profile .description{
+    margin-top: 20px;
+}
+.middle-content .box-2 .profile .description .name{
+    font-weight: bold;
+}
+
+.middle-content .box-2 .profile .description .designation{
+    font-size: 12px;
+}
+.middle-content .box-2 .paragraph{
+    width: 95%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.middle-content .box-2 .social{
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.middle-content .box-2 .social .count{
+   padding-left: 10px;
+}
+.middle-content .box-2 .social .comments{
+    padding-right: 10px;
+ }
+
+ .middle-content .box-2 .social .fa-thumbs-up{
+    color: #358fe8;
+ }
+
+ .middle-content .box-2 .link{
+    width: 95%;
+    margin: 15px;
+}
+
+.middle-content .box-2 .header{
+    font-size: 14px;
+    font-weight: bold;
+}
+.middle-content .box-2 .sub-header{
+    font-size: 10px;
+}
+.middle-content .box-2 hr{
+    width: 95%;
+    margin: auto;
+}
+
+.middle-content .box-2 .icons{
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.middle-content .box-2 .icons .text{
+   padding: 10px;
+   color: #808080;
+}
+.middle-content .box-2 .icons .fa-text{
+    color: #808080;
+ }
 
 .main-section .right-content{
     width: 50%;
     background-color: white;
-    height: 300px;
+    height: 200px;
+    border-radius: 15px;
 }
 
+.right-content .heading{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 15px auto;
+}
 
+.right-content .list{
+    width: 95%;
+    margin: 20px auto;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.right-content .list .sub-list .fa-circle{
+    color: #0d67c2;
+    font-size: 10px;
+}
+
+.right-content .list .sub-list .sublist-bold{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.list .para{
+    font-size: 10px;
+    margin-left: 16px;
+}
+
+.fa-text{
+    color: #808080;
+}
 
 
 
@@ -228,3 +339,8 @@ nav .input-search{
 li{
     cursor: pointer;
 }
+
+.hover:hover{
+    color: black;
+}
+
