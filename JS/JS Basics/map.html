@@ -1,0 +1,37 @@
+<!-- <Script>
+    // you want final value should be incremented by 5
+    var list = [10,20,30,40,50];
+    var finalresult = list.map(function(obj){
+        return obj*5
+    })
+    // var result = list.map((obj)=>{
+    //     return(obj + 5);
+    // }) Arrow Function
+    console.log("originalArry",list)
+    console.log("NewArry",finalresult)
+</Script> -->
+<!-- 
+<script>
+    var list=[1,2,3,4,5];
+    var finalresult = list.map(function(obj){
+        if(obj % 2 == 0){
+            return {type:'even',value:obj}
+        }else{
+              return {type:'odd',value:obj}
+        }
+    })
+    console.log(finalresult);
+</script> -->
+
+
+<Script>
+    var list = [10,20,30,33,50,55];
+    var finalresult = list.map(function(obj,index){
+        if(obj % 5 == 0){
+            return {index:index,status:true,value:obj};
+        }else{
+             return {index:index,status:false,value:obj};
+        }
+    })
+    console.log(finalresult);
+</Script>
