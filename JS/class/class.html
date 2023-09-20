@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    //     class Error {
+    //         constructor(name, role) {
+    //             this.name = name;
+    //             this.role = role;
+    //         }
+    //         printError = function () {
+    //             console.log(this.role)
+    //         }
+    //     }
+
+    //     const name1 = new Error("vinayaka", "student");
+    //     const name2 = new Error("AV", "student");
+    //   name1.printError()
+    class Robot{
+        constructor(name,pharse){
+            this.name = name;
+            this.sayPharse = function(){
+                console.log(pharse);
+            }
+        }
+        species = "robot";
+        transform = function (){
+            console.log("optimise prime");
+        } 
+    }
+
+    const robot1 = new Robot("tito","i can cook");
+    const robot2 = new Robot("terminator","i can dance");
+
+    
+    console.log(robot1.name);
+    robot1.sayPharse();
+    console.log(robot1.species);
+    robot1.transform();
+
+    console.log(robot2.name);
+    robot2.sayPharse();
+    console.log(robot2.species);
+    robot2.transform();
+
+    </script>
+</body>
+
+</html>
