@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+</body>
+<script>
+    const list = document.querySelectorAll('.demo');
+    list.forEach(function (obj) {
+        obj.addEventListener("click",function(){
+            this.style.backgroundColor = "red";
+        })
+    })
+
+</script>
+
+</html>

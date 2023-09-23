@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <form>
+        <input type="text" id="fullname">
+        <h1 id="demo"> </h1>
+    </form>
+    <script>
+        console.log(this)
+        const obj = {
+            name: "vinayka",
+            role: "student",
+            getDetails: function () {
+                console.log(this.role);
+            }
+        }
+        obj.getDetails();
+
+        const fullName = document.getElementById("fullname");
+        const header = document.getElementById("demo")
+        fullName.addEventListener('change', function () {
+            header.textContent = this.value;
+        })
+    </script>
+</head>
+
+</html>
