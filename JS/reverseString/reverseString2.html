@@ -1,0 +1,16 @@
+<script>
+    let str = "Welcome to this Javascript Guide!";
+
+    let reverstring = function (string) {
+        return string.split("").reverse().join(""); //it will split the strig to character array;
+        //reverse will reverse the array
+        //join will join the array back to string
+        // it will return final
+    };
+    let arr = str.split(" ").map(function (s) {
+        return reverstring(s);
+    })
+
+    console.log(arr.join(" "));
+
+</script>

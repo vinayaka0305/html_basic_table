@@ -1,0 +1,15 @@
+<script>
+    class Student{
+        constructor(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        getDetails = function(){
+            console.log("my age",this.age);
+        }//creating own method
+    }
+
+    const vinayObj = new Student("vinayaka","27");
+    console.log(vinayObj);
+    vinayObj.getDetails() // fetch the output for own method
+</script>

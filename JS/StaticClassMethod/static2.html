@@ -1,0 +1,23 @@
+<script>
+    // static word we for indenpendent methods and properties , which we belive that are never going to
+    //change
+
+    // class Student{
+    //      name1 = "vinayaka"
+    //     static hello = function(){
+    //         console.log("hello",Student.name1)// 'this' wiil through undefined because of static method
+            
+    //     }
+    // }
+
+    // Student.hello()
+
+    class Student{
+       static name1 = "vinayaka" // we make property also static to use 'this' to call the function
+        static hello = function(){
+            console.log("hello",this.name1)  
+        }
+    }
+
+    Student.hello()
+</script>

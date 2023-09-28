@@ -1,0 +1,19 @@
+<script>
+    class Vehicle{
+        constructor(speed){
+            this.speed = speed;
+        }
+    }
+
+    class Car extends Vehicle{
+        constructor(speed){
+            super(speed)
+        }
+        honk(){
+            console.log("car is honking")
+        }
+    }
+
+    const bmw = new Car("240km")
+    console.log(bmw.honk());
+</script>

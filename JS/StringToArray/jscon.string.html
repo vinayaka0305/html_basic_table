@@ -1,0 +1,13 @@
+<script>
+    //it will convert object into strings (whole object or whole array)
+    let StringArray = "10,11,12,13";
+    let array =[];
+    let numArray = StringArray.split(",");
+    for(let obj of numArray){
+        array.push(Number(obj));
+    }
+
+    console.log(JSON.stringify(array));
+    console.log(typeof JSON.stringify(array));
+
+</script>

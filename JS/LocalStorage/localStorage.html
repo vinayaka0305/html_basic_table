@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        const obj = {
+            name: "vinayaka",
+            role: "student"
+        }
+        //JSON.stringify converts object to string
+        localStorage.setItem("classRoom", JSON.stringify(obj))//it will  two argument 1 key and 2 value
+        console.log(localStorage.getItem("classRoom"))
+        console.log(typeof localStorage.getItem("classRoom"))// here we can check the by using type of
+        
+        //JSON.parse converts string back to object
+        console.log(JSON.parse(localStorage.getItem("classRoom")))
+        console.log(typeof JSON.parse(localStorage.getItem("classRoom"))) //here we can check the by using type of
+    </script>
+</body>
+
+</html>

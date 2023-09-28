@@ -1,0 +1,23 @@
+<script>
+    // this is a factory function
+    function factory(name,role){
+        return {
+            name : name,
+            role : role
+        }
+    }
+    console.log(factory("vinayaka","student"))
+
+    //constructor is also known as factory function
+     // class itself here acts as an object and constructor is the filler of this class
+    //and it get called every instance is created so that is why it is also call as factory function 
+    class Student{
+        constructor(name,role){
+            this.name = name
+            this.role = role
+        }
+    }
+
+    const student1 = new Student("Av","st2")// new object will be created as soon as we create new instace
+    console.log(student1)                   // which will be fillec by constructor immediately
+</script>

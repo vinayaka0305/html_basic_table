@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="demo-1" disabled>btn</button>
+        <button id="demo-2">enable</button>
+    </body>
+</html>
+
+<script>
+    document.getElementById("demo-2").addEventListener('click',function(){
+        let button = document.getElementById("demo-1");
+        button.disabled = false;
+    })
+</script>

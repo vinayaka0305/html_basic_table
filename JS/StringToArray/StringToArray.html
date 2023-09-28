@@ -1,0 +1,16 @@
+<Script>
+    let StringOfnumber = "10,20,30,40";//if we want to convert this entire strig to array
+    let numAray = [];   // we have use split
+    let arr = StringOfnumber.split(","); //wherever we , we should have single single variable
+    // if we print ["10","20","30","40"] => array Of String (StringArray)
+    //to convert string array into number we have follow below method;
+    for (let obj of arr) {
+        numAray.push(Number(obj));      //o/p =>[10,20,30,40] using of loop it is for value
+    }
+    // for(let i=0;i<arr.length;i++){
+    //     numAray.push(Number(arr[i]))
+    // } .this is normal for loop
+    console.log(numAray);
+    console.log(numAray.toString());// if we again want to convert this to string use toString() method
+
+</Script>

@@ -1,0 +1,13 @@
+<script>
+    let StringArray = "10,20,30,40";
+    let numArray =[];
+    let arr = StringArray.split(",");
+    for(let obj of arr){
+        if(isNaN(obj)){
+            alert("this not a number")
+            break;
+        }
+        numArray.push(Number(obj));
+    }
+    console.log(numArray);
+</script>

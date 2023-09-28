@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            .rectangle{
+                width: 200px;
+                height: 200px;
+                background-color:aqua;
+            }
+            .circle{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn">Add</button>
+        <div id="div1" class="rectangle"></div>
+    </body>
+    <script>
+        document.getElementById("btn").addEventListener('click',function(){
+            document.getElementById("div1").classList.remove("rectangle")
+            document.getElementById("div1").classList.add("circle")
+        })
+    </script>
+</html>

@@ -1,0 +1,13 @@
+<script>
+    // function is returning another function
+    function display(){
+        name = "vinayaka"
+       return function sub(){
+            return name;
+        }
+    }
+
+   let result = display()
+   console.log(result());
+   // a closure is feature in js that allows inner function to access outerscope of a function
+</script>
