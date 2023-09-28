@@ -36,9 +36,9 @@ function onClick(event) {
         const winner = findWinner();
 
         if (winner === 1) {
-            alert("congratulations! Player1 wins")
+            alert("congratulations ! Player1 wins")
         } else if (winner === 2) {
-            alert("congratulations! Player2 wins")
+            alert("congratulations ! Player2 wins")
         }
         if (emptyBox === 0 && findWinner() === 0) {
             alert("Draw!");
