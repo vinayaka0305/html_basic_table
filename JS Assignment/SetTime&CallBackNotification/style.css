@@ -1,0 +1,9 @@
+.notificaction{
+    margin: 10px;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid green;
+    text-align: center;
+    background-color: aqua;
+    display: none;
+}

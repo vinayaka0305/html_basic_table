@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <style>
+        #outer {
+            padding: 30px;
+            background-color: black;
+            width: fit-content;
+        }
+
+        #inner {
+            padding: 20px;
+            background-color: gray;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="inner">
+            <button id="btn">Click me!</button>
+        </div>
+    </div>
+</body>
+<script>
+    // javascript code goes here
+    const outerDiv = document.getElementById('outer');
+    const innerDiv = document.getElementById('inner');
+    const myButton = document.getElementById('btn');
+
+    // Capturing phase event listeners
+    outerDiv.addEventListener('click', function () {
+        console.log('outer capturing');
+    }, true);
+
+    innerDiv.addEventListener('click', function () {
+        console.log('inner capturing');
+    }, true);
+
+    myButton.addEventListener('click', function () {
+        console.log('button capturing');
+    }, true);
+
+    // Bubbling phase event listeners
+    myButton.addEventListener('click', function () {
+        console.log('button bubbling');
+    });
+
+    innerDiv.addEventListener('click', function () {
+        console.log('inner bubbling');
+    });
+
+    outerDiv.addEventListener('click', function () {
+        console.log('outer bubbling');
+    });
+</script>
+
+</html>
