@@ -1,0 +1,49 @@
+<script>
+    function StopWatch() {
+        let startTime;
+        this.duration = 0;
+        let clockRunning = false;
+        this.start = function () {
+            startTime = new Date();
+            clockRunning = true;
+            if (clockRunning) {
+                return "Stopwatch is already running"
+            }
+            return this.duration
+        }
+
+        this.stop = function () {
+            let currentTime = new Date();
+            let timeDifferecence = currentTime - startTime;
+            this.duration += timeDifferecence;
+            clockRunning = false;
+            if (!clockRunning) {
+                return "Stopwatch is not started"
+            }
+            return this.duration;
+        }
+
+        this.reset = function () {
+            this.duration = 0;
+            clockRunning = false;
+            startTime = undefined;
+            return this.duration;
+        }
+    }
+
+    const timer = new StopWatch();
+    // timer.start();
+    // setTimeout(function () {
+    //     timer.stop()
+    //     console.log(timer.duration);
+    // }, 1000)
+
+    const timer2 = new StopWatch()
+            // timer2.start();
+            // console.log(timer2.start())
+    const timer3 = new StopWatch();
+        timer.stop();
+
+        console.log(timer.stop())
+    
+</script>

@@ -1,0 +1,69 @@
+<script>
+    function Factory() {
+        this.createEmployee = function (firstName, lastName, type) {
+            let salary = 0;
+            switch (type) {
+                case 'fulltime':
+                    return new FullTime(firstName, lastName);
+                case 'parttime':
+                    return new PartTime(firstName, lastName);
+                case 'intern':
+                    return new Intern(firstName, lastName);
+            }
+        }
+    }
+
+    function FullTime(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.type = 'fulltime';
+        let salary = 0;
+        this.level = 3;
+        this.getSalary = function () {
+            return salary;
+        }
+        this.setSalary = function (newSalary) {
+            salary = newSalary;
+        }
+    }
+
+    function PartTime(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.type = 'parttime';
+        let salary = 0;
+        this.level = 2;
+        this.getSalary = function () {
+            return salary;
+        }
+        this.setSalary = function (newSalary) {
+            salary = newSalary;
+        }
+    }
+
+    function Intern(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.type = 'intern';
+        let salary = 0;
+        this.level = 1;
+        this.getSalary = function () {
+            return salary;
+        }
+        this.setSalary = function (newSalary) {
+            salary = newSalary;
+        }
+    }
+
+    let factory = new Factory();
+    let emp = factory.createEmployee("Kunal", "Singh", "intern");
+
+
+    console.log(emp.salary);    // undefined
+    console.log(emp.getSalary()); // 0
+    console.log(emp.firstName); // Kunal
+    console.log(emp.lastName); // Singh
+    console.log(emp.setSalary(1000)); // undefined
+    console.log(emp.getSalary());  // 1000
+    console.log(emp.level); // 1
+</script>

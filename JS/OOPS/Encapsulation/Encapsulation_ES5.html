@@ -1,0 +1,22 @@
+<script>
+    function Person(name) {
+        let fullname = name;//private variable in constructor function
+        this.setName = function (name) {
+            fullname = name;
+        }
+
+        this.getName = function () {
+            return fullname;
+        }
+        const getGetDetails = function () {
+            console.log(`this is ${fullname}`)
+        }
+        this.display = function () {
+            getGetDetails()
+        }
+    }
+    const p1 = new Person("");
+    p1.setName("vinayaka");
+    p1.display();
+
+</script>

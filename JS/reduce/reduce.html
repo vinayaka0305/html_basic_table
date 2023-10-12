@@ -1,0 +1,23 @@
+<script>
+    // reduce will take 1.intial/return value, 2.actual Value, 3.index, 4.array
+    //     const arr = [1,2,3];
+
+    //     arr.reduce(function(returned,actual,index,arr){
+    //         console.log(returned,actual,index,arr)
+    //         return returned+actual;
+    // },0)
+    function myReduce(array, callback, initialValue) {
+        let returnedValue = initialValue
+        for (let i = 0; i < array.length; i++) {
+            let actuaValue = array[i];
+            returnedValue = callback(returnedValue, actuaValue, i, array)
+        }
+        return returnedValue;
+    }
+
+    const number = [1, 2, 3, 4, 5];
+    const sum1 = myReduce(number, function (returnedValue, initialValue) {
+        return returnedValue + initialValue
+    }, 0)
+    console.log(sum1)
+</script>

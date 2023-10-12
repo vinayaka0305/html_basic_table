@@ -1,0 +1,16 @@
+<script>
+    let arr = [10,20,30];
+
+    // arr.forEach(function(val,indx,arr){
+    //     console.log(val,indx,arr)
+    // })
+    // internally one for will travel for element of the array;
+    
+
+    function callback(val,indx,arr){
+        console.log(val,indx,arr)
+    }
+    for(let i=0;i<arr.length;i++){
+        callback(arr[i],i,arr);
+    }
+</script>

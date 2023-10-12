@@ -1,0 +1,34 @@
+<script>
+
+    function Employee(name,yearOfJoin,location){
+        this.name = name;
+        this.yearOfJoin = yearOfJoin;
+        this.location = location;
+
+        this.getEmployeDetails = function(){
+            return `Name: ${name}, Year of Join: ${yearOfJoin}, Location: ${location}`;
+        }
+
+        let salary
+
+        this.setSalary = function(amount){
+            salary = amount;
+        }
+
+        this.geSalary = function(){
+            return salary
+        }
+    }
+
+    let name = "vinayaka";
+    let yeraOfJoin = "2023";
+    let locationAt = "karnataka";
+    let salary = 30000;
+
+    const myEmployee = new Employee(name,yeraOfJoin,locationAt);
+    myEmployee.setSalary(salary);
+    console.log(myEmployee.getEmployeDetails());
+    console.log(myEmployee.geSalary());
+
+
+</script>

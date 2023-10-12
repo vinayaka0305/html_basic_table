@@ -1,0 +1,14 @@
+<script>
+    let obj = {a:1};
+    // console.log(obj.__proto__);
+    //first proto is attached to obj and it is reffer to constructor function inside prototype;
+    // second is null 
+
+    let obj2 = Object.create(obj);
+    console.log(obj2.__proto__.__proto__.__proto__)
+
+    //first proto is attached to obj and it is reffer to constructor function inside prototype;
+    // second proto is attached to only default prototypeMethods
+    //third proto is giving null
+
+</script>

@@ -1,0 +1,16 @@
+<script>
+    let person1 = {
+        avengerName:"iron man",
+        age:55,
+        getOriginalName(name){
+            console.log(this.avengerName,this.age,name);
+        }
+    }
+    person1.getOriginalName("tony Stark");
+
+    let person2 = {
+        avengerName:"Cap America",
+        age:97,
+    }
+    person1.getOriginalName.bind(person2,"Steve Rogers")();
+</script>

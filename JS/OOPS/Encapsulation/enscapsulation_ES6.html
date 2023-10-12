@@ -1,0 +1,23 @@
+<script>
+    class Person {
+        #fullname//private variable
+        constructor(fullname) {
+            this.#fullname = fullname;
+        }
+        //encapsulation(data hiding)
+        setName(input) {
+            this.#fullname = input;// it will set the name;
+        }
+        getName() {
+            return this.#getDetails();//it will return getdetails method;
+        }
+        //abstarction -hiding implementations(hiding data);
+        #getDetails() { // private method (hiding data)
+            console.log(`${this.#fullname}`)// when i call setname() the name is setted to full name
+        }                                // and when i call getname the getDetais mehthod is execute and print the fullname
+    }
+
+    const p1 = new Person("vinayaka");
+    p1.setName("AV DVG");
+    p1.getName();
+</script>

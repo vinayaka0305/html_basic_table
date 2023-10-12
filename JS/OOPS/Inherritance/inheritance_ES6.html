@@ -1,0 +1,22 @@
+<script>
+    class Person{
+        constructor(fullname,age){
+            this.fullname = fullname;
+            this.age = age;
+        }
+        getDetails(){
+            return `${this.fullname}-${this.age}`
+        }
+    }
+    
+    class Man extends Person{
+        constructor(fullname,age,lastname){
+            super(fullname,age)
+            this.lastname = lastname
+        }
+        address = "karnatka"
+    }
+
+    const p1 = new Man("vinayaka",25,"AV");
+    console.log(p1);
+</script>

@@ -1,0 +1,19 @@
+<script>
+    function createCounter(intialValue){
+        let num = intialValue;
+        let obj = {
+            increment:function(){
+                num++;
+               return num;
+            },
+            decrement:function(){
+               num--;
+               return num;
+            }
+        }
+        return obj;
+    }
+    const counter = createCounter(5);
+    console.log(counter.increment())
+    console.log(counter.decrement())
+</script>

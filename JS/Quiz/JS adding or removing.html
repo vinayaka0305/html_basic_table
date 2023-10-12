@@ -1,0 +1,39 @@
+<script>
+    // var a = '20';
+
+    // var b = a = 30;
+
+    // console.log(a+b);
+
+    // const person = { name: "John", age: 30 };
+    // const copy = Object.assign({}, person);
+    // copy.age = 40;
+    // console.log(person.age);
+
+    function myFunction() {
+        var res = "";
+        res = res + Number.isInteger('123');
+        console.log(res);
+    }
+
+
+
+    let arr1 = [1, 2, 3, 4];
+
+
+    Array.prototype.max = function () {
+        const arr = [...this]
+        let max = arr[0];
+        for (let obj of arr) {
+            if (obj > max) {
+                max = obj
+            }
+        }
+        return max;
+    }
+
+    console.log(arr1.max());
+
+
+
+</script>

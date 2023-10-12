@@ -1,0 +1,23 @@
+<script>
+    class Person{
+        #name
+        constructor(name){
+            this.#name = name;
+        }
+
+        setName(input){
+            this.#name = input;
+        }
+
+        getName(){
+            return this.#getDetails();
+        }
+        #getDetails(){
+            console.log(`${this.#name}`);
+        }
+    }
+
+    const p1 = new Person("");
+    p1.setName("vinayaka");
+    p1.getName();
+</script>

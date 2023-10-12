@@ -1,0 +1,19 @@
+<script>
+    function Person(fullname,age){
+        this.fullname = fullname;
+        this.age = age;
+    }
+
+    Person.prototype.getDetail = function(){
+        return `${this.fullname}-${this.age}`
+    }
+
+    function man(address){
+        this.address = address;
+    }
+
+    let p1 = new Person("vinayaka",27);
+    let p2 = new man("karnataka")
+    let obj = Object.create({...p1,...p2})
+    console.log(obj);
+</script>

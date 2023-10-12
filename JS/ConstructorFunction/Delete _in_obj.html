@@ -1,0 +1,21 @@
+<script>
+    let person = {
+        name :"vinayaka",
+        age :"27",
+        SetAge(newAge){
+            this.age = newAge;
+        },
+        getAge(){
+            return this.age;
+        },
+        delemethod(input){
+            delete this[input]//when ever we have dynamic property use empty array bracket []
+        }
+    }
+    // delete person.name;
+    // delete person['SetAge']
+    console.log(person);
+    person.delemethod("getAge")
+    console.log(person);
+
+</script>
