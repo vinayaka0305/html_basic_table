@@ -1,0 +1,23 @@
+<script>
+    let promise = new Promise(function(res,rej){
+        // res("resloved")
+        rej("error")
+        
+    })
+    // first case 
+    // promise.then(function(result){// this is the promise1st(let promise)
+    //     console.log(result)
+    //     return 5// this is the promise2nd of .then(bcz it will return promise)
+    // }).catch(function(err){
+    //     console.log(err);
+    // })
+    // second case
+    promise.then(function(result){
+        console.log(result)
+       x // in this 2nd promise the error occured the catch will execute blast
+    }).catch(function(err){
+        console.log("boooom")
+    })
+
+
+</script>

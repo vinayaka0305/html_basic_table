@@ -1,0 +1,27 @@
+<body>
+    <ul id="recipeList"></ul>
+    <p id="recipeReadyInMinutes"></p>
+</body>
+
+<script>
+    function initial(){
+      fetch("https://jsonplaceholder.typicode.com/todos").then((result)=>{
+         return result.json();
+      }).then((data)=>{
+        bindingData(data);
+      })
+    }
+    initial();
+    function bindingData(input){
+       let parent = document.querySelector("#recipeList");
+       for(let obj of input){
+        parent.innerHTML+=`<li>${obj.title}</li>`;
+        // let child = document.createElement('li');
+        // child.innerHTML = obj.title;
+        // child.addEventListener('click',()=>{
+        //     document.querySelector("#recipeReadyInMinutes").textContent = `Ready in minutes: ${obj.readyInMinutes}`;
+        // })
+        // parent.appendChild(child);
+       }
+    }
+</script>

@@ -1,0 +1,10 @@
+<script>
+    let promiseReq = fetch("https://api.github.com/gists/public");
+
+    promiseReq.then(function(response){
+       const responsePromise = response.json();// in .then we get response object
+       responsePromise.then(function(res){
+        console.log(res);
+       })
+    })
+</script>

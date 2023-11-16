@@ -1,0 +1,15 @@
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+}
+
+#data-container {
+    display: flex;
+    flex-wrap: wrap;
+    color:rgb(5, 171, 236);
+}
+
+.description {
+    margin-top: 10px;
+}

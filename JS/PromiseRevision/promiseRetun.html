@@ -1,0 +1,29 @@
+<script>
+    let count = 0;
+    console.log(count);
+
+
+    function creartePromise(){
+        return new Promise(function (res, rej) {
+            setTimeout(function () {
+                count += 2;
+                console.log(count);
+                res()
+            }, 2000)
+        })
+    }
+
+    creartePromise().then(function(){
+       return creartePromise();//4
+    }).then(function(){
+        return creartePromise();//6
+    }).then(function(){
+        return creartePromise();//8
+    }).then(function(){
+        return creartePromise();//10
+    })
+
+    // promise resolves the call bell , how means the nesting is avoided and readability 
+    // of the code is better than callback hell;
+
+</script>;

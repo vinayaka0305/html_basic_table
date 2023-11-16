@@ -1,0 +1,20 @@
+<script>
+    let count = 0;
+    console.log(count);
+
+    function createNewPromise() {
+        return new Promise(function (res, rej) {
+            setTimeout(function () {
+                count += 2;
+                console.log(count);
+                res()
+            }, 2000)
+        })
+    }
+
+   console.log(createNewPromise().then(function () {
+         createNewPromise()
+    }))
+
+    
+</script>

@@ -1,0 +1,44 @@
+<script>
+    // function gpayScan(input,callback){
+    //     setTimeout(function(){
+    //         console.log("Scanning");
+    //         callback(input);
+    //     },2000)
+    // }
+
+    // function balanceCheck(input){
+    //     setTimeout(function(){
+    //         let balance = 3000;
+    //         if(balance-input >0){
+    //             console.log("balance available");
+    //         }else{
+    //             console.log("insuffient balace")
+    //         }
+    //     },3000)
+    // }
+
+    // gpayScan(4000,balanceCheck);
+
+
+
+    function one(input,callBack){
+        setTimeout(function(){
+            console.log(input);
+            input += 2
+            if (callback) {
+            callback(input);
+             }
+        },2000);
+    }
+
+    function two(input){
+        setTimeout(function(){
+            console.log(input)
+        },2000)
+    }
+
+    one(2,function(input){
+        two(input)
+    })
+
+</script>

@@ -1,0 +1,37 @@
+<script>
+    function gPay(amount){
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                console.log("scanning");
+                resolve(amount)
+            },2000)
+        })
+    }
+    function checkBalance(amount){
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                let balance = 3000;
+                if(balance-amount >0){
+                    console.log("balacance available");
+                    resolve(amount);
+                }else{  
+                    console.log("insufficient balance");
+                }
+            },1000)
+        })
+    }
+
+    function sent(amount){
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                console.log("transaction succesful",amount)
+            },1000)
+        })
+    }
+
+    gPay(4000).then(function(amount){
+        return checkBalance(amount);
+    }).then(function(amount){
+        return sent(amount);
+    })
+</script>

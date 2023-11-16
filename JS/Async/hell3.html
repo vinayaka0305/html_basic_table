@@ -1,0 +1,40 @@
+<script>
+    function GpayScan(amount,callback){
+        setTimeout(function(){
+            console.log("Gpay Scan",amount);
+            callback(amount);
+        },3000)
+       
+    }
+
+    function checkingMyBankBalance(amount,callback){
+        setTimeout(function(){
+            //true or false realtime data
+            let balance = 3000;
+            if(balance-amount>0){
+                console.log("Existing Balance is available to proceed");
+                callback(amount);
+            }
+            else{
+                console.log("amount is not available");
+            }    
+        },1000)
+         
+    }
+
+    function sendingAmountToSenderBank(input){
+        setTimeout(function(){
+            console.log("Final amount",input);
+        },2000)   
+    }
+
+   
+    GpayScan(4000,(amount)=>{
+        checkingMyBankBalance(amount,(amount)=>{
+            sendingAmountToSenderBank(amount);
+        });
+    });
+    
+     
+
+</script>

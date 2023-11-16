@@ -1,0 +1,22 @@
+<html>
+    <h1 id="name">what is ur name</h1>
+    <button id="btn">Button</button>
+</html>
+
+<script>
+    const btn = document.getElementById("btn");
+    const nameNode = document.getElementById("name")
+
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.open("GET","https://mocki.io/v1/3e9578cb-ae1c-4ab4-9d23-86ecb894aff7");
+    xhttp.onload = function(){
+        const response = JSON.parse(this.responseText);
+            nameNode.textContent = response.name
+
+    }
+    btn.addEventListener('click',function(){
+        xhttp.send()
+    })
+
+</script>

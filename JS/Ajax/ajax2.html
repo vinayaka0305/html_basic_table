@@ -1,0 +1,14 @@
+<html>
+    <h1 id ="name">what is ur name</h1>
+</html>
+<script>
+    const nameNode = document.getElementById("name")
+    const xhttp = new XMLHttpRequest();
+
+    xhttp.open("GET","https://mocki.io/v1/3e9578cb-ae1c-4ab4-9d23-86ecb894aff7");
+    xhttp.send();
+    xhttp.onload = function(){
+        const response = JSON.parse(this.responseText);
+        nameNode.textContent = response.name
+    }
+</script>

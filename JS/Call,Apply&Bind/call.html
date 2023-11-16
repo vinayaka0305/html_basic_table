@@ -1,0 +1,14 @@
+<script>
+    function Car(type,fuelType){
+        console.log(this);//without call this keyword was
+        this.type = type;//pointing to window
+        this.fuelType = fuelType;
+    }
+
+    const obj = {};
+
+    Car.call(obj,"bmw","diesel");//afer using call method it is pointing to the obj
+    console.log(obj.type)
+    console.log(obj)
+
+</script>

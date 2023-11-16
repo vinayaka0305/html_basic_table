@@ -1,0 +1,38 @@
+<script>
+    function googlePay(amount){
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                console.log("scanning the QR code");
+                resolve(amount);
+            },1000)
+        })
+    }
+
+    function checkBalance(amount){
+        return new Promise(function(resolve){
+            setTimeout(function(){
+            let balacance = 5000;
+            if(balacance-amount>0){
+                console.log("balance avaliable");
+                resolve(amount);
+            }else{
+                console.log("insufficient Balance")
+            }
+            },2000)
+        })
+    }
+
+    function sending(amount){
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                console.log("Transaction successful",amount)
+            },2000)
+        })
+    }
+
+    googlePay(3000).then(function(amount){
+        return checkBalance(amount);
+    }).then(function(amount){
+        return sending(amount);
+    })
+</script>

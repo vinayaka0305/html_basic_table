@@ -1,0 +1,14 @@
+<script>
+    function intial(){
+        fetch("https://content.newtonschool.co/v1/pr/64996337e889f331d43f70ba/recipes").then(function(result){
+            console.log(result);
+            return result.json();
+            // return json data;
+        }).then(function(data){
+            console.log(data);
+            // it it print javascrip object
+        })
+    }
+    intial();
+
+</script>

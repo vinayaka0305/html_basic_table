@@ -1,0 +1,26 @@
+<script>
+    function GpayScan(input,callBack) {
+        setTimeout(function () {
+            console.log("you're paying", input);
+            callBack()
+        }, 2000)
+
+    }
+
+    function chekingMyBankBalance() {
+        setTimeout(function () {
+            console.log("it will return Yes or NO");
+        }, 1000)
+    }
+
+    function sendingAmoutToSenderBank(input) {
+        setTimeout(function () {
+            console.log("finaly amount is received", input);
+        }, 1000)
+    }
+
+    GpayScan(300,()=>{
+        chekingMyBankBalance();
+    });
+    
+</script>

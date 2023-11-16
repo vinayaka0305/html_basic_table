@@ -1,0 +1,22 @@
+<script>
+    function add(a,b){
+        return new Promise(function(resolve){
+            setTimeout(function(){  
+                resolve(a+b);
+            },1000)
+        })
+    }
+
+    function display(input){
+        return new Promise(function(resolve){
+            resolve(`this is the final output ${input}`);
+        })
+    }
+
+    add(2,8).then(function(input){
+        console.log(input);
+        return display(input)
+    }).then(function(input){
+        console.log(input);
+    })
+</script>

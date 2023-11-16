@@ -1,0 +1,32 @@
+<script>
+    function Gpay(input, callBack) {
+        setTimeout(function () {
+            console.log("Scanning", input);
+            callBack(input)
+        }, 2000)
+    }
+
+    function checkingBalance(input, callBack) {
+        setTimeout(function () {
+            let balance = 1000;
+            if (balance - input > 0) {
+                console.log("yes")
+                callBack(input)
+            } else {
+                console.log("No")
+            }
+        }, 2000)
+    }
+
+    function sent(input) {
+        setTimeout(function () {
+            console.log("amount transffered Successfully",input)
+        }, 1000)
+    }
+
+    Gpay(200, function (input) {
+        checkingBalance(input, function(input){
+            sent(input)
+        })
+    })
+</script>

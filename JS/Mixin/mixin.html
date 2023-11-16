@@ -1,0 +1,20 @@
+<script>
+    class User{
+        constructor(name){
+            this.name = name;
+        }
+    }
+
+    const classRoomMethods = {
+        printStudentName: function(){
+            console.log("vinayaka");
+        }
+    }
+
+   Object.assign(User.prototype,classRoomMethods);
+
+   const u1 = new User("AV");
+   console.log(u1.name)// this will print AV
+   console.log(u1.printStudentName())// this will print vinayaka
+   console.log(u1)
+</script>

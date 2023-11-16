@@ -1,0 +1,16 @@
+<script>
+    let promise = new Promise(function (resolve, reject) {
+        resolve("some error");
+    })
+
+
+    // promise.then(function(){},function(err){
+    //     console.log(err)
+    // })  // on of the method to handle catch
+
+
+    promise.catch(function (err) {
+        console.log(err);
+    }) // it is an another way to handle rejection in promises
+
+</script>

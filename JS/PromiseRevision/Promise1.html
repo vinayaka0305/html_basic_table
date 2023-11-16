@@ -1,0 +1,32 @@
+<script>
+    let promise = new Promise(function(resolve,reject){
+    //     setTimeout(function(){
+    //         reject('promise rejected')
+    //         console.log(promise);
+    //     },2000)
+    // })
+        setTimeout(function(){
+            resolve('promise resolved')
+            console.log(promise);
+        },2000)
+    });
+
+promise.then(
+    function(){
+        console.log("resloved")
+    },
+    function(){
+        console.log("rejected")
+    }
+)
+
+
+promise.then(
+    function(result){
+        console.log(result)
+    },
+    function(error){
+        console.log(error)
+    }
+)
+</script>

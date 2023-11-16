@@ -1,0 +1,14 @@
+<script>
+    const xhttp = new XMLHttpRequest();//we have to create a instance from the XMLHttpRequest class
+
+    // we have to attch a callbackfunction;
+
+    xhttp.onload = function(){
+        console.log(JSON.parse( this.responseText));
+    }
+
+    xhttp.open('GET','https://mocki.io/v1/3e9578cb-ae1c-4ab4-9d23-86ecb894aff7')
+
+    xhttp.send()
+</script>
+

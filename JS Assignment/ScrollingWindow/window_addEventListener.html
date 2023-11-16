@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                padding:0;
+            }
+            .box{
+                width: 400px;
+                height: 1500px;
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+    <script>
+        window.addEventListener('scroll',()=>{
+            console.log("scrolling");
+          console.log(document.documentElement.scrollHeight)//this will print total scrolling height that is 1516
+        })//or document height 1500px // means maximum we can scroll 1500px
+        //entire document scrolling level
+    </script>
+</html>

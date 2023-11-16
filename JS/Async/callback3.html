@@ -1,0 +1,18 @@
+<script>
+    function async(callback) {
+        setTimeout(function () {
+            console.log("iam asyn")
+            callback();
+        }, 2000)
+
+    }
+
+    function synch() {
+        setTimeout(function () {
+            console.log("iam synch")
+        },1000)
+
+    }
+
+    async(synch);
+</script>

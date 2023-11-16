@@ -1,0 +1,18 @@
+<script>
+    let promise = new Promise(function (res, rej) {
+        res("error aa gaya")
+    })
+    // the below code is .then consumer
+    // promise.then(function (result) {
+    //     console.log(result)
+    // },
+    //     function (result) {
+    //         console.log(result)
+    //     }
+    // )
+
+    promise.finally(function(){
+        console.log("three") ;
+    })
+
+</script>

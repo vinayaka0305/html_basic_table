@@ -1,0 +1,36 @@
+<script>
+    let promise = new Promise(function (res, rej) {
+        res(1);
+    })
+
+    // promise.then(function (result) {
+    //     console.log(result);//1
+    //     return result + 1;
+    // }).then(function (result) {
+    //     console.log(result);//2
+    //     throw result + 1; // throw 3
+    // }).then(function (result) {
+    //     console.log(result);
+    //     return result + 1;
+    // }).catch(function (error) {
+    //     console.log(error);// 3
+    // })
+
+
+    promise.then(function(result){
+        console.log(result)
+        return result + 1;
+    }).finally(function(){
+        console.log("i'm the final one")
+    }).then(function(result){
+        console.log(result)
+        return result +1;
+    }).then(function(result){
+        console.log(result)
+        throw result + 1;
+    }).then(function(result){
+        console.log(result);
+    }).catch(function(err){
+        console.log(err);
+    })
+</script>

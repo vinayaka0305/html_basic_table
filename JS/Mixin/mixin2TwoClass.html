@@ -1,0 +1,22 @@
+<script>
+    class User{
+        constructor(name){
+            this.name = name;
+        }
+    }
+
+    class sayHiMixin  {
+        sayHi = function(){
+            alert(`hello ${this.name}`)
+        }
+        sayBye = function(){
+            alert(`Bye ${this.name}`)
+        }
+    }
+
+    Object.assign(User.prototype,new sayHiMixin());
+
+    const u1 = new User("vinayaka");
+    u1.sayBye()
+    console.log(u1)
+</script>
