@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.header {
+    background-color: transparent;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.blue {
+    color: #004aad;
+    font-size: 2.4rem;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+    background-color: #004aad;
+    color: white;
+    border-radius: 20px;
+    font-size: 100px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 100px;
+    margin: -40px 53px -41px 13px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+#search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 34px;
+}
+
+input {
+    padding:15px 114px 14px 50px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 16px;
+}
+
+.material-symbols-outlined {
+    color: black;
+    font-size: 34px;
+    margin-left: -46px;
+}
+
+#button-container {
+    display: flex;
+    gap: 20px;
+}
+
+#button-container>button {
+    padding: 12px 40px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #004aad;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#search-btn {
+    padding: 8px 40px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: -87px;
+    background-color: lightgray;
+}
+
+
+.card {
+    display: table;
+    width: 100%;
+    margin: 16px;
+    border: 1px solid black;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #004aad;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.heading,.data {
+    display: table-row;
+    text-align: left;
+}
+
+.heading>div,.data>div {
+    display: table-cell;
+    padding: 5px;
+    border: none;
+}
