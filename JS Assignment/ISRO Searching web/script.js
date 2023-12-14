@@ -46,15 +46,22 @@ async function displayData(type) {
   let input = inputValue.value.toLowerCase();
   dataContainer.innerHTML = '';
   let data = await fetchData();
+  cityBtn.style.backgroundColor = "";
+  centerBtn.style.backgroundColor = "";
+  stateBtn.style.backgroundColor = "";
   let filerData = data.filter(function (data) {
-    if (type == 'city') {
+    if (type == 'city' && input != "") {
+      cityBtn.style.backgroundColor = "#89CFF0";
       return data.Place.toLowerCase().includes(input);
-    } else if (type == 'center') {
+    } else if (type == 'center' && input != "") {
+      centerBtn.style.backgroundColor = "#89CFF0";
       return data.name.toLowerCase().includes(input);
-    } else if (type == 'state') {
+    } else if (type == 'state' && input != "") {
+      stateBtn.style.backgroundColor = "#89CFF0";
       return data.State.toLowerCase().includes(input);
     }
   })
+ 
   // console.log(filerData)
   fetchtableData(filerData);
 }
